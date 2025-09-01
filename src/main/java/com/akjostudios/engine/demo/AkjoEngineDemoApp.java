@@ -1,3 +1,8 @@
 package com.akjostudios.engine.demo;
 
-public class AkjoEngineDemoApp {}
+import com.akjostudios.engine.api.AkjoApplication;
+
+public class AkjoEngineDemoApp extends AkjoApplication {
+    @Override
+    public void onStart() { ctx.lifecycle().stopApplication(); }
+}
