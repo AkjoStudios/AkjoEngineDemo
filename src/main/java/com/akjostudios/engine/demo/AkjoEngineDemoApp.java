@@ -6,5 +6,7 @@ import com.akjostudios.engine.api.context.Component;
 @Component
 public class AkjoEngineDemoApp extends AkjoApplication {
     @Override
-    public void onStart() { ctx.lifecycle().stopApplication(); }
+    public void onStart() {
+        ctx.lifecycle().stopApplication();
+    }
 }
