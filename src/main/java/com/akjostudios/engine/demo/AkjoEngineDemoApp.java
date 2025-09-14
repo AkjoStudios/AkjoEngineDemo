@@ -5,7 +5,7 @@ import com.akjostudios.engine.api.context.Component;
 import com.akjostudios.engine.api.event.EventHandler;
 import com.akjostudios.engine.api.scheduling.SchedulerLane;
 import com.akjostudios.engine.api.window.WindowMode;
-import com.akjostudios.engine.api.window.events.*;
+import com.akjostudios.engine.api.window.events.AllWindowsClosedEvent;
 import org.jetbrains.annotations.NotNull;
 
 @Component
