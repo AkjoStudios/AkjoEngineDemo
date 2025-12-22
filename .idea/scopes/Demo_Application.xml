@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Demo Application" pattern="(file[akjo-engine-demo]:pom.xml||file[akjo-engine-demo]:src/main/resources/project.yml||file[akjo-engine-demo]:src/main/resources/assets//*||file[akjo-engine-demo]:src/main/java//*||file[akjo-engine-demo]:target//*||file[akjo-engine-demo]:*.log)&amp;&amp;!file[akjo-engine-demo]:src/main/java/module-info.java" />
+</component>
