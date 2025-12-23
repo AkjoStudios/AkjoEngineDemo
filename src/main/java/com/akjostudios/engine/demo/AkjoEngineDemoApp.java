@@ -12,7 +12,7 @@ import org.jetbrains.annotations.NotNull;
 public class AkjoEngineDemoApp extends AkjoApplication {
     @Override
     public void onStart() {
-        ctx.windows().create("Demo Application", WindowMode.FULLSCREEN, ctx.monitors()::getPrimaryMonitor)
+        ctx.windows().create("Demo Application", ctx.monitors()::getPrimaryMonitor)
                 .thenAccept(window -> window.onRender(() -> window.canvas().clear(Color.TEAL)));
     }
 
