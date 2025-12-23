@@ -1,6 +1,7 @@
 package com.akjostudios.engine.demo;
 
 import com.akjostudios.engine.api.AkjoApplication;
+import com.akjostudios.engine.api.common.base.color.Color;
 import com.akjostudios.engine.api.context.Component;
 import com.akjostudios.engine.api.event.EventHandler;
 import com.akjostudios.engine.api.window.events.AllWindowsClosedEvent;
@@ -10,12 +11,8 @@ import org.jetbrains.annotations.NotNull;
 public class AkjoEngineDemoApp extends AkjoApplication {
     @Override
     public void onStart() {
-        ctx.scheduler().render().immediate(
-                () -> ctx.windows().builder(
-                        "Demo Application",
-                        ctx.monitors()::getPrimaryMonitor
-                ).build()
-        );
+        ctx.windows().create("Demo Application", ctx.monitors()::getPrimaryMonitor)
+                .thenAccept(window -> window.onRender(() -> window.canvas().clear(Color.WHITE)));
     }
 
     @EventHandler
