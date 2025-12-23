@@ -12,7 +12,7 @@ public class AkjoEngineDemoApp extends AkjoApplication {
     @Override
     public void onStart() {
         ctx.windows().create("Demo Application", ctx.monitors()::getPrimaryMonitor)
-                .thenAccept(window -> window.onRender(() -> window.canvas().clear(Color.TEAL)));
+                .thenAccept(window -> window.onRender(() -> window.canvas().clear(Color.WHITE)));
     }
 
     @EventHandler
