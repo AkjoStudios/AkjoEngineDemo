@@ -4,7 +4,6 @@ import com.akjostudios.engine.api.AkjoApplication;
 import com.akjostudios.engine.api.common.base.color.Color;
 import com.akjostudios.engine.api.context.Component;
 import com.akjostudios.engine.api.event.EventHandler;
-import com.akjostudios.engine.api.window.WindowMode;
 import com.akjostudios.engine.api.window.events.AllWindowsClosedEvent;
 import org.jetbrains.annotations.NotNull;
 
