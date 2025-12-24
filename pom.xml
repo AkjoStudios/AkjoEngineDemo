@@ -14,6 +14,8 @@
     <artifactId>akjo-engine-demo</artifactId>
     <version>1.0.0</version>
 
+    <name>Akjo Engine Demo</name>
+
     <dependencies>
         <dependency> <!-- DO NOT REMOVE THIS DEPENDENCY -->
             <groupId>com.akjostudios.engine</groupId>
